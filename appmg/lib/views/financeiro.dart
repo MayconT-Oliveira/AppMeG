@@ -65,7 +65,7 @@ class _FinanceiroState extends State<Financeiro> {
     return Scaffold(
       drawer: Drawer(
         backgroundColor: Color.fromRGBO(32, 5, 40, 1),
-        surfaceTintColor: Colors.amber,
+        shadowColor: Colors.amber,
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
@@ -268,7 +268,7 @@ class _FinanceiroState extends State<Financeiro> {
             },
             icon: Icon(
               Icons.home,
-              color: Colors.white,
+              color: Colors.amber,
               shadows: <Shadow>[
                 Shadow(
                   offset: Offset(1.0, 1.0),
@@ -284,7 +284,7 @@ class _FinanceiroState extends State<Financeiro> {
           "PENDÊNCIAS FINANCEIRAS",
           textAlign: TextAlign.center,
           style: TextStyle(
-            color: Colors.white,
+            color: Colors.amber,
             fontSize: 20,
             shadows: <Shadow>[
               Shadow(

@@ -66,7 +66,7 @@ class _ManutencaoState extends State<Manutencao> {
     return Scaffold(
       drawer: Drawer(
         backgroundColor: Color.fromRGBO(32, 5, 40, 1),
-        surfaceTintColor: Colors.amber,
+        shadowColor: Colors.amber,
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
@@ -269,7 +269,7 @@ class _ManutencaoState extends State<Manutencao> {
             },
             icon: Icon(
               Icons.home,
-              color: Colors.white,
+              color: Colors.amber,
               shadows: <Shadow>[
                 Shadow(
                   offset: Offset(1.0, 1.0),
@@ -285,7 +285,7 @@ class _ManutencaoState extends State<Manutencao> {
           "EM DESENVOLVIMENTO",
           textAlign: TextAlign.center,
           style: TextStyle(
-            color: Colors.white,
+            color: Colors.amber,
             fontSize: 20,
             shadows: <Shadow>[
               Shadow(

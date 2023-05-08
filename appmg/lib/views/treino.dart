@@ -61,7 +61,7 @@ class _TreinoState extends State<Treino> {
     return Scaffold(
       drawer: Drawer(
         backgroundColor: Color.fromRGBO(32, 5, 40, 1),
-        surfaceTintColor: Colors.amber,
+        shadowColor: Colors.amber,
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
@@ -261,7 +261,7 @@ class _TreinoState extends State<Treino> {
         title: Text(
           "MEU TREINO",
           style: TextStyle(
-            color: Colors.white,
+            color: Colors.amber,
             fontSize: 20,
             shadows: <Shadow>[
               Shadow(
@@ -276,7 +276,7 @@ class _TreinoState extends State<Treino> {
           IconButton(
             icon: Icon(
               Icons.home,
-              color: Colors.white,
+              color: Colors.amber,
               shadows: <Shadow>[
                 Shadow(
                   offset: Offset(1.0, 1.0),
@@ -318,7 +318,6 @@ class _TreinoState extends State<Treino> {
                 onPressed: () {
                   Navigator();
                 },
-                // ignore: sort_child_properties_last
                 child: Text(
                   'A   Tríceps, Abdômen,...         >',
                   style: TextStyle(color: Colors.black, shadows: <Shadow>[
@@ -332,9 +331,8 @@ class _TreinoState extends State<Treino> {
                 style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50)),
-                    backgroundColor: Colors.white,
+                    backgroundColor: Colors.amber,
                     textStyle: TextStyle(
-                      color: Colors.amber,
                       fontSize: 25,
                     ))),
             SizedBox(
@@ -358,9 +356,8 @@ class _TreinoState extends State<Treino> {
                 style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50)),
-                    backgroundColor: Colors.white,
+                    backgroundColor: Colors.amber,
                     textStyle: TextStyle(
-                      color: Colors.amber,
                       fontSize: 25,
                     ))),
             SizedBox(
@@ -384,9 +381,8 @@ class _TreinoState extends State<Treino> {
                 style: ElevatedButton.styleFrom(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50)),
-                    backgroundColor: Colors.white,
+                    backgroundColor: Colors.amber,
                     textStyle: TextStyle(
-                      color: Colors.amber,
                       fontSize: 25,
                     ))),
             SizedBox(

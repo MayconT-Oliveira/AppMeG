@@ -67,7 +67,7 @@ class _HomeMGState extends State<HomeMG> {
     return Scaffold(
       drawer: Drawer(
         backgroundColor: Color.fromRGBO(32, 5, 40, 1),
-        surfaceTintColor: Colors.amber,
+        shadowColor: Colors.amber,
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
@@ -268,7 +268,7 @@ class _HomeMGState extends State<HomeMG> {
           "M&G Fitness",
           textAlign: TextAlign.center,
           style: TextStyle(
-            color: Colors.white,
+            color: Colors.amber,
             fontSize: 25,
             shadows: <Shadow>[
               Shadow(
@@ -301,6 +301,13 @@ class _HomeMGState extends State<HomeMG> {
                       Icons.monitor_weight,
                       color: Colors.amber,
                       size: 90,
+                      shadows: <Shadow>[
+                        Shadow(
+                          offset: Offset(1.0, 1.0),
+                          blurRadius: 3.0,
+                          color: Colors.white,
+                        )
+                      ],
                     ),
                   ),
                   SizedBox(width: 30),
@@ -312,6 +319,13 @@ class _HomeMGState extends State<HomeMG> {
                       Icons.monetization_on_outlined,
                       color: Colors.amber,
                       size: 90,
+                      shadows: <Shadow>[
+                        Shadow(
+                          offset: Offset(1.0, 1.0),
+                          blurRadius: 3.0,
+                          color: Colors.white,
+                        )
+                      ],
                     ),
                   ),
                   SizedBox(width: 30),
@@ -323,6 +337,13 @@ class _HomeMGState extends State<HomeMG> {
                       Icons.fitness_center,
                       color: Colors.amber,
                       size: 90,
+                      shadows: <Shadow>[
+                        Shadow(
+                          offset: Offset(1.0, 1.0),
+                          blurRadius: 3.0,
+                          color: Colors.white,
+                        )
+                      ],
                     ),
                   ),
                 ],
@@ -333,22 +354,52 @@ class _HomeMGState extends State<HomeMG> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(
-                  width: 15,
+                  width: 20,
                 ),
                 Text(
                   "IMC",
-                  style: TextStyle(color: Colors.amber, fontSize: 15),
+                  style: TextStyle(
+                    color: Colors.amber,
+                    fontSize: 20,
+                    shadows: <Shadow>[
+                      Shadow(
+                        offset: Offset(1.0, 1.0),
+                        blurRadius: 1.0,
+                        color: Colors.white,
+                      )
+                    ],
+                  ),
                 ),
-                SizedBox(
-                  width: 60,
-                ),
-                Text("FINANCEIRO",
-                    style: TextStyle(color: Colors.amber, fontSize: 15)),
                 SizedBox(
                   width: 50,
                 ),
+                Text("FINANCEIRO",
+                    style: TextStyle(
+                      color: Colors.amber,
+                      fontSize: 20,
+                      shadows: <Shadow>[
+                        Shadow(
+                          offset: Offset(1.0, 1.0),
+                          blurRadius: 1.0,
+                          color: Colors.white,
+                        )
+                      ],
+                    )),
+                SizedBox(
+                  width: 40,
+                ),
                 Text("TREINO",
-                    style: TextStyle(color: Colors.amber, fontSize: 15)),
+                    style: TextStyle(
+                      color: Colors.amber,
+                      fontSize: 20,
+                      shadows: <Shadow>[
+                        Shadow(
+                          offset: Offset(1.0, 1.0),
+                          blurRadius: 1.0,
+                          color: Colors.white,
+                        )
+                      ],
+                    )),
               ],
             )
           ],

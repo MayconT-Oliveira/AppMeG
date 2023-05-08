@@ -99,7 +99,7 @@ class _ImcState extends State<Imc> {
     return Scaffold(
         drawer: Drawer(
           backgroundColor: Color.fromRGBO(32, 5, 40, 1),
-          surfaceTintColor: Colors.amber,
+          shadowColor: Colors.amber,
           child: ListView(
             padding: EdgeInsets.zero,
             children: [
@@ -296,7 +296,7 @@ class _ImcState extends State<Imc> {
         appBar: AppBar(
           title: Text("Calculadora IMC",
               style: TextStyle(
-                color: Colors.white,
+                color: Colors.amber,
                 shadows: <Shadow>[
                   Shadow(
                     offset: Offset(1.0, 1.0),
@@ -314,7 +314,7 @@ class _ImcState extends State<Imc> {
               },
               icon: Icon(
                 Icons.refresh,
-                color: Colors.white,
+                color: Colors.amber,
                 shadows: <Shadow>[
                   Shadow(
                     offset: Offset(1.0, 1.0),
@@ -330,7 +330,7 @@ class _ImcState extends State<Imc> {
               },
               icon: Icon(
                 Icons.home,
-                color: Colors.white,
+                color: Colors.amber,
                 shadows: <Shadow>[
                   Shadow(
                     offset: Offset(1.0, 1.0),
